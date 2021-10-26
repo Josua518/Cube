@@ -29,13 +29,13 @@ body {
 .player, .computer {
   width: 330px;
   height: 230px;
-  margin-left: 5px;
+  margin-left: 0px;
   border-radius: 25px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   color: #e8eddf;
-  padding-left: 50px;
+  padding-left: 35px;
   padding-right: 50px;
 }
 
