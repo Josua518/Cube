@@ -83,6 +83,12 @@
 <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
 <script src="script.js">
 </script>
+<script type="text/javascript">
+var $audio = $('#audio-test').get(0);
 
+$('#set-volume-50').click(function(){
+  $audio.volume = 0.1;
+});
+</script>
 </body>
 </html>
