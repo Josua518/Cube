@@ -9,15 +9,6 @@
   box-sizing: border-box;
 }
 
-.container1 {
-  position: absolute;
-  top: 2%;
-  left: 8%;
-  width: 130px;
-  height: 40px;
-  text-align: center;
-}
-
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
