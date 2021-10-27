@@ -31,7 +31,7 @@
 
 .card__image {      
   width: 140%;
-  height: 100%;
+  height: auto;
 }
 
 .card__overlay {
