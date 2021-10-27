@@ -1,151 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!--=============== BOXICONS ===============-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
-  <!--=============== CSS ===============-->
-  <link rel="stylesheet" href="bottomnav.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='stylesheet'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
-  <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'><link rel="stylesheet" href="style.css">
-
-  <title>Responsive bottom navigation</title>
+  <title>CodePen - Redirecting Loader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="load.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script type="text/javascript">
+    function load() {
+      window.location.href = "index1.html";
+    }
+  </script>
 </head>
-<body>
-  <!--=============== HEADER ===============-->
-  <header class="header" id="header">
 
-    <nav class="nav container">
-
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="index.html" class="nav__link active-link">
-              <i class='bx bx-home-alt nav__icon'></i>
-              <span class="nav__name">Home</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="about.html" class="nav__link">
-              <i class='bx bx-user nav__icon'></i>
-              <span class="nav__name">About</span>
-            </a>
-
-          </li>
-          <li class="nav__item">
-            <a href="guides.html" class="nav__link">
-              <i class='bx bx-book-alt nav__icon'></i>
-              <span class="nav__name">Guides</span>
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a href="blog.html" class="nav__link">
-              <i class='bx bx-briefcase-alt nav__icon'></i>
-              <span class="nav__name">Blog</span>
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a href="contact.html" class="nav__link">
-              <i class='bx bx-message-square-detail nav__icon'></i>
-              <span class="nav__name">Contact</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <!--=============== HOME ===============-->
-
-
-    <!-- partial:index.partial.html -->
-
-    <audio id="set-volume-50" src="https://youtu.be/OCA2SGVt22g" loop autoplay="autoplay"></audio>
-
-    <div class="area">
-      <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-
-      <div class="container">
-
-        <a href="cube.html">
-          <button id="button">
-            Cube
-          </button>
-        </a>
-
-        <div class="space"></div>
-
-        <a href="smashbox.html">
-          <button id="button2">
-            Smash Box
-          </button>
-        </a>
-
-        <div class="space"></div>
-
-        <a href="tictactoe.html">
-          <button id="button3">
-            Tic Tac Toe
-          </button>
-        </a>
-
-        <div class="space"></div>
-
-        <a href="2dgame.html">
-          <button id="button4">
-            2d Game
-          </button>
-        </a>
-
-        <div class="space"></div>
-
-        <a href="subway.html">
-          <button id="button5">
-            Subway Surf
-          </button>
-        </a>
-
-        <div class="space"></div>
-
-        <a href="rps.html">
-          <button id="button6">
-            Rock Paper Siccors
-          </button>
-        </a>
-
-      </div>
-    </div>
-
-  </section>
-</main>
-
-
-<!--=============== MAIN JS ===============-->
-<script src="bottomnav.js"></script>
+<body onload="load()">
+<!-- partial:index.partial.html -->
+<div class='body'>
+  <span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+  <div class='base'>
+    <span></span>
+    <div class='face'></div>
+  </div>
+</div>
+<div class='longfazers'>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<h1>Loading...</h1>
 <!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js">
-</script>
-<script src="script.js">
-</script>
+  <script  src="load.js"></script>
+
 </body>
 </html>
