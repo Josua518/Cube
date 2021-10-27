@@ -107,7 +107,7 @@ img {
 
 .nav__logo {
   color: var(--title-color);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 767px) {
@@ -139,6 +139,15 @@ img {
   color: var(--title-color);
   font-weight: 600;
 }
+
+.nav__link:hover {
+  opacity: 50%;
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  transform: background 10.8s
+  
+}
+
 
 .nav__list {
   justify-content: space-around;
