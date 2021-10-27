@@ -2,7 +2,7 @@
 
 :root {
   --surface-color: #fff;
-  --curve: 40;
+  --curve: 0;
 }
 
 * {
