@@ -36,7 +36,6 @@ padding: 0.6rem 1.3rem;
   width: 100%;
  }
 </style>
-
 <body>
     <div class="container">
       <span class="big-circle"></span>
