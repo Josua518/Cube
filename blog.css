@@ -100,7 +100,7 @@ body {
 .card__tagline {
   display: block;
   margin: 1em 0;
-  font-family: "MockFlowFont";  
+  font-family: 'Nunito', sans-serif;
   font-size: .8em; 
   color: #D7BDCA;  
 }
