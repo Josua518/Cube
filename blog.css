@@ -9,9 +9,13 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Noto Sans JP', sans-serif;
-  background-color: #fef8f8;
+.container1 {
+  position: absolute;
+  top: 2%;
+  left: 8%;
+  width: 130px;
+  height: 40px;
+  text-align: center;
 }
 
 .cards {
