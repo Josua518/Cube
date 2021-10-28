@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pocong :D</title>
+  <meta name="viewport" content="width=device-height, initial-scale=0.71">
+  </head>
+    <body style="margin-left:30%; height: 100vh; background: rgb(29, 29, 29); text-align: center;">
+        <canvas id="c" width="4000px" height="400px">
+            <script>
+                context = c.getContext("2d");
+                const pocong = new Image();
+                pocong.src = "pocong.png";
+                pocongX = pocongDY = score = bestScore = 0;
+                interval = pocongSize = pipeWidth = topPipeBottomY = 24;
+                pocongY = pipeGap = 200;
+                canvasSize = pipeX = 400;
+                c.onclick = () => (pocongDY = 9);
+                setInterval(() => {
+                    context.fillStyle = "skyblue";
+                    context.fillRect(0,0,canvasSize,canvasSize);
+                    pocongY -= pocongDY -= 0.5;
+                    context.drawImage(pocong, pocongX, pocongY, pocongSize * (524/375), pocongSize);
+                    context.fillStyle = "black";
+                    pipeX -= 8;
+                    pipeX < -pipeWidth && 
+                    ((pipeX = canvasSize), (topPipeBottomY = pipeGap * Math.random()));
+                    context.fillRect(pipeX, 0, pipeWidth, topPipeBottomY);
+                    context.fillRect(pipeX, topPipeBottomY + pipeGap, pipeWidth, canvasSize);
+                    context.fillStyle = "black";
+                    context.fillText(score++, 9, 25);
+                    bestScore = bestScore < score ? score : bestScore;
+                    context.fillText(`Best: ${bestScore}`, 9, 50);
+                    (((pocongY < topPipeBottomY || pocongY > topPipeBottomY + pipeGap) && pipeX < pocongSize * (524/374))
+                    || pocongY > canvasSize) && 
+                    ((pocongDY = 0), (pocongY = 200),(pipeX = canvasSize), (score = 0));
+                }, interval)
+            </script>
+        </canvas>
+    </body>
+</html>

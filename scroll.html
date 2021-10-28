@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="scroll.css"/>
+  <link rel="stylesheet" href="lobbycard.css">
+  </head>
+<body>
+  
+  <div id="progressbar"></div>
+  <div id="scrollpath"></div>
+
+  <div class="container">
+  <div class="card">
+    <div class="box">
+      <div class="content">
+        <h2>01</h2>
+        <h3>Cube</h3>
+        <p>Cube? don't have money to buy cube? Just play cube in this app! </p>
+        <a href="cube.html">Play Now</a>
+      </div>
+    </div>
+  </div>
+  
+    <div class="card">
+    <div class="box">
+      <div class="content">
+        <h2>02</h2>
+        <h3>Smash Box</h3>
+        <p>Have played fruit ninja? try this game, this is remake from fruit ninja to smash box, <br>fruit = box? try it now! </p>
+        <a href="smashbox.html">Play Now</a>
+      </div>
+    </div>
+  </div>
+  
+<!-- Card Game 3 | Stack Game -->
+
+    <div class="card">
+    <div class="box">
+      <div class="content">
+        <h2>03</h2>
+        <h3>Stack Game</h3>
+        <p>have an accurate finger? Test it on game stack now!</p>
+        <a href="stackloading.html">Play Now</a>
+      </div>
+    </div>
+  </div>
+  
+  
+<!-- Card Game 4 | Pocong Terbang -->
+
+    <div class="card">
+    <div class="box">
+      <div class="content">
+        <h2>04</h2>
+        <h3>Pochica Terbang</h3>
+        <p>Flap Bird! this game is cloned from Flap Bird, Try it Now! </p>
+        <a href="pocongloading.html">Play Now</a>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  
+  
+  
+  <script type="text/javascript">
+    Let progress = document.getElementById('progressbar');
+    Let totalHeight = document.body.scrollHeight - window. innerHeight;
+    Let progressHeight = (window.PageYOffset / totalHeight) = 100;
+    progress.style.height = progressHeight + "%"
+    }
+  </script>
+</body>
+</html>
